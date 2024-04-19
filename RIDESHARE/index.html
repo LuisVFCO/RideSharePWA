@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ff9600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Share</title>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('pwabuilder-sw.js')
+        }
+    </script>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        
+        body {
+            background-color: #FF9600; 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-family: Arial, sans-serif; 
+        }
+
+        
+        .container {
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        h1 {
+            color: rgb(10, 10, 10); 
+            font-size: 48px; 
+        }
+
+        a {
+            font-size: 30px; 
+            padding: 10px 20px; 
+            background-color: black; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            align-self: center;
+            border-radius: 30px;
+            text-decoration: none;
+
+        }
+
+        button:hover {
+            background-color: #e85d04; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RIDESHARE</h1> <br><br>
+        <a href="motorista.html">Continuar</a>
+    </div>
+
+</body>
+</html>
